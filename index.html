@@ -5,81 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sinyang Dev</title>
     <link rel="stylesheet" href="sinyangDev.css" />
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
   </head>
   <body>
-    <div class="all_container">
+    <div class="container">
       <!---------- 백그라운드 영상 ---------->
-      <video class="background_video" autoplay muted loop>
+      <video class="background_video" muted autoplay loop>
         <source src="./images/sn_background.mp4" type="video/mp4" />
       </video>
-      <!----------상단바 ---------->
-      <header id="sn_header">
-        <div class="header_container">
-          <!---------- 왼쪽메뉴 ---------->
-          <div class="header_leftmenu">
-            <ul>
-              <li>DevDailyLog</li>
-              <li>DevReferenceData</li>
-              <li>Meeting</li>
-            </ul>
-          </div>
-          <!---------- 로고 ---------->
-          <h3 class="sn_dev">
-            <span id="sndevtitle">S</span>
-            &ensp;i n y a n g &ensp;
-            <span id="sndevtitle">D</span>
-            &ensp;e v
-          </h3>
-          <!---------- 오른쪽메뉴 ---------->
-          <div class="header_rightmenu">
-            <ul>
-              <li>Page</li>
-            </ul>
-          </div>
-        </div>
+      <!---------- 상단바 ---------->
+      <header>
+        <!---------- 상단바 왼쪽 ---------->
+        <ul class="head_leftmenu">
+          <li>DevDailyLog</li>
+          <li>DevData</li>
+          <li>Meeting</li>
+        </ul>
+        <!---------- 상단바 로고 ---------->
+        <h1 class="head_logo">
+          <span>S</span>i <span>N</span>yang <span>D</span> e v
+        </h1>
+        <!---------- 상단바 오른쪽 ---------->
+        <ul class="head_rightmenu">
+          <li>page</li>
+        </ul>
       </header>
       <!---------- 사이드바 ---------->
-      <div class="sn_sidebar">
-        <!---------- 사진 ---------->
-        <div class="sidebar_images">
-          <div class="sidebar_background_img"></div>
-          <div class="sidebar_profile_img"></div>
-        </div>
-      </div>
-      <!---------- 정보 ---------->
-      <div class="sidebar_profile_info">
-        <div class="info_introduce">
-          <div class="info_title">SiNyang Dev 🔥</div>
-          <div class="info_name">
-            <h4><em>시녕_</em></h4>
-          </div>
-        </div>
-        <!---------- 사이드바 메뉴 ---------->
-        <div class="sidebar_small_menu">
-          <ul>
-            <li>home</li>
-            <li>noticeboard</li>
-          </ul>
-        </div>
-      </div>
+      <aside>
+        <div class="side_bg"></div>
+        <div class="side_pf"></div>
+        <ul class="side_info">
+          <li><h3 class="info_title">SiNyang Dev 🔥</h3></li>
+          <li><h4 class="info_subtitle">시냥_</h4></li>
+        </ul>
+        <ul class="side_menu">
+          <li>
+            <img
+              src="./images/sn_sidemenuhome.png"
+              width="20px"
+              height="20px"
+              alt="home"
+            />
+          </li>
+          <li><img src="" alt="board" /></li>
+          <li><img src="" alt="adsf" /></li>
+        </ul>
+      </aside>
       <!---------- 메인 ---------->
-      <main class="sn_main">
-        <!---------- 메인 인삿말 ---------->
-        <div class="main_container1">
-          <h1>
-            H&ensp;e&ensp;l&ensp;l&ensp;o&ensp;
-            W&ensp;o&ensp;r&ensp;l&ensp;d&ensp; !
-          </h1>
-          <h2>안뇽하세요~ 반가워요~</h2>
-          <div class="main_container2">
-            <ul>
-              <li>Blog</li>
-              <li>Instagram</li>
-              <li>Donate</li>
-            </ul>
+      <main>
+        <div class="main_box">
+          <div class="main_hello">
+            <span id="hello-en">Hello World !</span>
+            <span id="hello-kr">안녕 세계 !</span>
           </div>
+          <ul class="main_menu">
+            <li>Blog</li>
+            <li>
+              <a href="https://www.instagram.com/birth_ll.ll/" target="_blank"
+                ><img
+                  src="./images/sn_insta.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+            </li>
+            <li>Donate</li>
+          </ul>
         </div>
       </main>
     </div>
+    <script src="sndev.js"></script>
   </body>
 </html>
