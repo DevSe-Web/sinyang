@@ -137,8 +137,9 @@ aside {
   z-index: 2;
   top: 45%;
   left: 5%;
-  gap: 10px;
+  gap: 20px;
   border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 11px -5px rgba(50, 50, 50, 1);
 }
 
@@ -175,7 +176,7 @@ main {
   top: 10%;
 }
 
-#hello-en {
+#app {
   margin: 1em;
   text-align: center;
   font-size: 50px;
@@ -189,14 +190,7 @@ main {
 
 :root {
   --ti-cursor-margin-left: 0.1em;
-  --ti-cursor-color: rgb(0, 81, 0);
-}
-
-.main_hello > h3 {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  font-size: 40px;
+  --ti-cursor-color: white;
 }
 
 .main_menu {
@@ -213,6 +207,7 @@ main {
   margin: 0;
   padding: 0 20px;
   border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 11px -5px rgba(50, 50, 50, 1);
 }
 
